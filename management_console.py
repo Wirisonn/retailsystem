@@ -421,6 +421,7 @@ def main_win():
                                         productroot.geometry('250x150+600+300')
                                         productroot.title('Lookup Products')
                                         productroot.attributes('-topmost', True)
+                                        productroot.iconbitmap(r'assets/titlelogo.ico')
 
                                         def search_view():
                                             def update(rows):
@@ -1019,6 +1020,7 @@ def main_win():
                                     emproot.geometry('250x150+600+300')
                                     emproot.title('Lookup Employee')
                                     emproot.attributes('-topmost', True)
+                                    emproot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -1181,6 +1183,7 @@ def main_win():
                                     suproot.geometry('250x150+600+300')
                                     suproot.title('Lookup Supplier')
                                     suproot.attributes('-topmost', True)
+                                    suproot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -1766,6 +1769,7 @@ def main_win():
                                     receivedroot.geometry('250x150+600+300')
                                     receivedroot.title('Lookup Received')
                                     receivedroot.attributes('-topmost', True)
+                                    receivedroot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -1945,6 +1949,7 @@ def main_win():
                                     POroot.geometry('250x150+600+300')
                                     POroot.title('Lookup PO')
                                     POroot.attributes('-topmost', True)
+                                    POroot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -2521,6 +2526,7 @@ def main_win():
                                     cusroot.geometry('250x150+600+300')
                                     cusroot.title('Lookup Customer')
                                     cusroot.attributes('-topmost', True)
+                                    cusroot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -3004,6 +3010,7 @@ def main_win():
                                     productroot.geometry('250x150+600+300')
                                     productroot.title('Lookup Products')
                                     productroot.attributes('-topmost', True)
+                                    productroot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -3837,6 +3844,7 @@ def main_win():
                                     billroot.geometry('250x150+600+300')
                                     billroot.title('Lookup Bill')
                                     billroot.attributes('-topmost', True)
+                                    billroot.iconbitmap(r'assets/titlelogo.ico')
 
                                     def search_view():
                                         def update(rows):
@@ -5047,6 +5055,7 @@ def main_win():
                                         productroot.geometry('250x150+600+300')
                                         productroot.title('Lookup Products')
                                         productroot.attributes('-topmost', True)
+                                        productroot.iconbitmap(r'assets/titlelogo.ico')
 
                                         def search_view():
                                             def update(rows):
@@ -5196,6 +5205,7 @@ def main_win():
                                         productroot.geometry('250x150+600+300')
                                         productroot.title('Lookup Products')
                                         productroot.attributes('-topmost', True)
+                                        productroot.iconbitmap(r'assets/titlelogo.ico')
 
                                         def search_view():
                                             def update(rows):
