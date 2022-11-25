@@ -684,7 +684,7 @@ def main_win():
 
                             chib.after(3000, main_win)
 
-                        def manage_emloyee():
+                        def manage_employee():
 
                             def insert():
                                 id = e11.get()
@@ -1088,7 +1088,7 @@ def main_win():
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=manage_emloyee)
+                                                command= lambda:[root1.destroy(),manage_employee()])
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14, 'bold'), width=8,
@@ -1248,7 +1248,7 @@ def main_win():
                                 butt15.place(x=281, y=2)
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14,'bold'), width=8, height=3,
-                                                command=manage_supplier)
+                                                command=lambda:[root1.destroy(), manage_supplier()])
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14,'bold'), width=8, height=3,
@@ -1839,7 +1839,7 @@ def main_win():
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=send)
+                                                command=lambda:[root1.destroy(), send()])
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14, 'bold'), width=8,
@@ -2018,7 +2018,7 @@ def main_win():
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=receive)
+                                                command=lambda:[root1.destroy(), receive()])
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14, 'bold'), width=8,
@@ -2597,7 +2597,7 @@ def main_win():
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=manage_customer)
+                                                command=lambda:[root.destroy(), manage_customer()] )
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14, 'bold'), width=8,
@@ -3082,7 +3082,7 @@ def main_win():
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=manage_products)
+                                                command=lambda:[root.destroy(), manage_products()])
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Show\n''Negative', font=('times new roman', 14, 'bold'), width=8,
@@ -4024,32 +4024,32 @@ def main_win():
 
                                 butt12 = Button(tt2frame, text='View', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy, state=DISABLED)
                                 butt12.place(x=560, y=2)
 
                                 butt13 = Button(tt2frame, text='Copy', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy,state=DISABLED)
                                 butt13.place(x=467, y=2)
 
                                 butt14 = Button(tt2frame, text='Delete', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy, state=DISABLED)
                                 butt14.place(x=374, y=2)
 
                                 butt15 = Button(tt2frame, text='Edit', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy, state=DISABLED)
                                 butt15.place(x=281, y=2)
 
                                 butt16 = Button(tt2frame, text='New', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy, state=DISABLED)
                                 butt16.place(x=188, y=2)
 
                                 butt17 = Button(tt2frame, text='Clear', font=('times new roman', 14, 'bold'), width=8,
                                                 height=3,
-                                                command=root.destroy)
+                                                command=root.destroy, state=DISABLED)
                                 butt17.place(x=95, y=2)
 
                                 butt18 = Button(tt2frame, text='Search', font=('times new roman', 14, 'bold'), width=8,
@@ -4764,7 +4764,7 @@ def main_win():
                             # Adding File Menu and commands
                         file = Menu(menubar, tearoff=0)
                         menubar.add_cascade(label='Employee', menu=file)
-                        file.add_command(label='Manage Employee', command=manage_emloyee)
+                        file.add_command(label='Manage Employee', command=manage_employee)
                         file.add_command(label='View Employee', command=view_employee)
                             # file.add_command(label='Save', command=None)
                         file.add_separator()
